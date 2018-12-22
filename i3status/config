@@ -1,0 +1,62 @@
+general {
+  output_format = "i3bar"
+  colors = true
+  color_good = "#00FF00"
+  color_degraded = "#FFFF00"
+  color_bad = "#FF0000"
+}
+
+## TRAY STUFF SWITCHED ON ##
+
+order += "tztime local"
+order += "volume all"
+#order += "cpu_usage"
+order += "wireless wlp4s0"
+
+## TRAY STUFF I SWITCHED OFF ##
+#order += "load"
+#order += "disk /"
+#order += "cpu_temperature 0"
+#order += "disk /home"
+#order += "wireless _first_"
+#order += "ethernet _first_"
+#order += "battery all"
+#order += "load"
+#order += "ipv6"i
+
+cpu_usage {
+        format = " %usage    "
+}
+
+load {
+        format = " load %1min"
+}
+
+tztime local {
+      # format = "%Y-%m-%d %H:%M:%S"
+       format = "%l:%M" 
+      #format = " %l:%M   "
+       #align = "center"
+       #min_width = 1090 
+	separator = true 
+	separator_block_Width = 20 
+}
+
+volume all {
+    #format = " %volume   "
+    #format_muted = " Muted   "
+    format = "%volume"
+    format_muted = "Muted"
+    mixer = "Master"
+    mixer_idx = 0
+    separator_block_width = 20
+}
+
+wireless wlp4s0 {
+    #format_up = " %ip - %essid"
+    format_up = "%essid"
+    #format_up = "     %essid - %ip " 
+    format_down = ""
+    separator = true
+    separator_block_width = 20 
+}

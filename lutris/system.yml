@@ -1,0 +1,3 @@
+system:
+  reset_desktop: true
+  restore_gamma: true

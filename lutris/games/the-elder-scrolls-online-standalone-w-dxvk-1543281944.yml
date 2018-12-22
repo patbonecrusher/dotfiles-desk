@@ -1,0 +1,14 @@
+game:
+  arch: win64
+  exe: /home/mark/Games/the-elder-scrolls-online-tamriel-unlimited/drive_c/Program
+    Files (x86)/Zenimax Online/Launcher/Bethesda.net_Launcher.exe
+  prefix: /home/mark/Games/the-elder-scrolls-online-tamriel-unlimited
+system:
+  env:
+    DXVK_HUD: '0'
+wine:
+  Desktop: true
+  dxvk: true
+  dxvk_version: '0.91'
+  esync: true
+  version: tkg-3.19-x86_64
