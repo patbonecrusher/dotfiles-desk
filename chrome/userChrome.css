@@ -1,0 +1,209 @@
+:root {
+    --tabs-border: transparent !important;
+    /* active tab left & right borders - not working in 58?*/
+    --toolbox-border-bottom-color: transparent !important;
+    /* 1px line under background tabs */
+    --chrome-nav-bar-controls-border-color: transparent !important;
+    /* border around url bar */
+}
+
+toolbox {
+    background-color: #000 !important;
+    color: #AAAAAA;
+}
+
+
+
+:root:-moz-any([inFullscreen], [tabsintitlebar]) #TabsToolbar:not(:-moz-lwtheme) { -moz-appearance: none !important; }
+#TabsToolbar {
+    background-color: #000000 !important;
+    margin-bottom: 0px !important;
+    margin-top: -5px !important;
+    margin-left: 25vw !important;
+    margin-right: 0px !important;
+    max-height: 24px !important;
+    height: 24px !important
+}
+
+#nav-bar {
+    margin-bottom: 0px !important;
+    margin-top: -27px !important;
+    margin-left: -1px !important;
+    margin-right: 80vw !important;
+    border-top: none !important;
+    height: 26px;
+    background-color: black !important;
+}
+
+#main-window[sizemode="normal"]>#titlebar {
+    -moz-appearance: initial !important;
+}
+
+#back-button,
+#forward-button,
+#stop-reload-button,
+nav-bar-overflow-button,
+#PanelUI-button,
+#home-button,
+#customizableui-special-spring1,
+#customizableui-special-spring2,
+#library-button,
+#downloads-button,
+#sidebar-button,
+.tabs-newtab-button,
+#star-button,
+#statuspanel,
+.urlbar-icon.urlbar-page-action,
+.titlebar-placeholder {
+    display: none !important;
+}
+
+#back-button>.toolbarbutton-icon,
+#forward-button>.toolbarbutton-icon {
+    transform: scale(0.9, 0.9) !important;
+    margin-left: 2px !important;
+    margin-right: -2px !important;
+}
+
+#PanelUI-button,
+#customization-panel-container,
+#customization-panelWrapper .panel-arrow {
+    -moz-box-ordinal-group: 0 !important;
+    margin-right: -6px !important;
+}
+
+#appMenu-popup {
+    margin-right: -258px !important;
+}
+
+#appMenu-popup .panel-arrow {
+    margin-right: 248px !important;
+}
+
+#nav-bar-overflow-button {
+    transform: scale(0.9, 0.9) !important;
+    fill: var(--color-overflow) !important;
+}
+
+.tabbrowser-tab {
+    height: 28px !important;
+}
+
+
+.tabbrowser-tab::after,
+.tabbrowser-tab::before {
+    border-left: none !important;
+}
+
+.tabbrowser-tab::after,
+.tabbrowser-tab::before {
+    color: grey !important;
+    opacity: .2 !important;
+}
+
+
+
+/* New tab button color */
+
+#new-tab-button,
+.tabs-newtab-button {
+    fill: var(--chrome-color) !important;
+}
+
+
+/* tab line - adjust color & size, default #0a84ff 2px */
+
+
+.tab-line {
+    background-color: #0a84ff !important;
+    height: 0px !important;
+}
+
+
+/* Hide various elements */
+
+
+/* Menu */
+
+#appMenu-fxa-container,
+
+/* Sign in to Sync */
+
+#appMenu-fxa-container+toolbarseparator,
+
+/* #appMenuRestoreLastSession, */
+
+#appMenu-zoom-controls,
+#appMenu-zoom-controls+toolbarseparator,
+#appMenu-edit-controls,
+#appMenu-edit-controls+toolbarseparator,
+#appMenu-library-button,
+#appMenu-customize-button,
+#appMenu-customize-button+toolbarseparator,
+#appMenu-open-file-button,
+#appMenu-save-file-button,
+#appMenu-find-button,
+#appMenu-more-button,
+
+/* URL Bar */
+#urlbar[focused="true"],
+#urlbar:hover, .searchbar-textbox:hover {
+    box-shadow: 0 0 0 !important;
+    border: 0 solid transparent !important;
+}
+
+#urlbar,
+.searchbar-textbox,
+#urlbar:hover,
+.searchbar-textbox:hover {
+    background: #000 !important;
+    color: white !important;
+    height: 24px !important;
+    padding: 0 0px !important;
+    font-size: 1.0em !important;
+    border-radius: 0 !important;
+    outline: none !important;
+    box-shadow: 0 0 0;
+    border: 0 solid transparent !important;
+    -moz-appearance: none;
+    margin: 0px 5px !important;
+    min-height: 24px !important;
+    cursor: default;
+}
+
+#pageActionButton,
+#pocket-button-box,
+ar-button,
+.autocomplete-history-dropmarker,
+#identity-box,
+.urlbar-history-dropmarker.urlbar-icon.chromeclass-toolbar-additional,
+#TabsToolbar .titlebar-placeholder[type="pre-tabs"],
+#page-action-buttons,
+#PanelUI-menu-button,
+#identity-icon-labels {
+    display: none !important;
+}
+
+
+
+
+:root:not([uidensity="compact"]) .tab-content {
+    padding: 0 0px;
+    background-color: black !important;
+    color: #aaaaaa !important;
+    border: 0;
+}
+
+
+.CodeMirror {
+    font-family:    "Ubuntu Mono", monospace !important;
+    font-size:      14pt !important;
+}
+
+
+browser {
+    margin-right: -17px !important;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    }
+
